@@ -31,5 +31,35 @@
     cursor: pointer;
     text-align: center;
     margin: 0 auto;
+}
 
+.grid-container {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+
+
+.button {
+    transition-duration: 0.4s;
+    background-color: #364f65;
+    color: white;
+    border: none;
+    padding: 30px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    width: 250px;
+    height: 100px;
+    font-family: Calibri, sans-serif;
+}
+
+.button:hover {
+    background-color: #708aa2; /* Green */
+    color: #75ce3f;
 }
