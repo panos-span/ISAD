@@ -21,6 +21,15 @@
     width: 50%;
 }
 
+.center_text {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #364f65;
+    padding: 10px;
+}
+
 .block {
     display: block;
     width: 100%;
@@ -68,6 +77,6 @@
 }
 
 .button:hover {
-    background-color: #708aa2; /* Green */
+    background-color: #708aa2;
     color: #75ce3f;
 }
