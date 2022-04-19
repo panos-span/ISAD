@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Calendar</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/preloader.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+        <div class="bounce4"></div>
+        <div class="bounce5"></div>
+        <div class="bounce6"></div>
+        <div class="bounce7"></div>
+        <div class="bounce8"></div>
+        <div class="bounce9"></div>
+        <div class="bounce10"></div>
+        <div class="bounce11"></div>
+        <div class="bounce12"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+    <!-- Image Logo -->
+    <a href="index.html">
+        <img src="images/badge.png" class="top_left" alt="Furuno_Badge">
+    </a>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+
+            </li>
+            <li class="nav-item">
+
+            </li>
+            <li class="nav-item">
+
+            </li>
+            <li class="nav-item">
+                <p style="color: white;font-size: 18px">Signed in as <b><u>Γραμματέας</u></b></p>
+            </li>
+        </ul>
+
+    </div>
+</nav> <!-- end of navbar -->
+<!-- end of navbar -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="center">
+    <a href="Event.html">
+        <button class="button">Add Meeting/Event</button>
+    </a>
+</div>
+
+
+<div class="calendar" id="calendar-app">
+    <div class="calendar--day-view" id="day-view">
+        <span class="day-view-exit" id="day-view-exit">&times;</span>
+        <span class="day-view-date" id="day-view-date">MAY 29 2016</span>
+        <div class="day-view-content">
+            <div class="day-highlight">
+                You <span class="day-events" id="day-events">had no events for today</span>. &nbsp; <span tabindex="0"
+                                                                                                          onkeyup="if(event.keyCode != 13) return; this.click();"
+                                                                                                          class="day-events-link"
+                                                                                                          id="add-event"
+                                                                                                          data-date>Add a new event?</span>
+            </div>
+            <div class="day-add-event" id="add-day-event-box" data-active="false">
+                <div class="row">
+                    <div class="half">
+                        <label class="add-event-label">
+                            Name of event
+                            <input type="text" class="add-event-edit add-event-edit--long" placeholder="New event"
+                                   id="input-add-event-name">
+
+                        </label>
+                    </div>
+                    <div class="qtr">
+                        <label class="add-event-label">
+                            Start Time
+                            <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time"
+                                   data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                            <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm"
+                                   data-options="a,p,am,pm">
+                        </label>
+                    </div>
+                    <div class="qtr">
+                        <label class="add-event-label">
+                            End Time
+                            <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time"
+                                   data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                            <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm"
+                                   data-options="a,p,am,pm">
+                        </label>
+                    </div>
+                    <div class="half">
+                        <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
+                           class="event-btn--save event-btn">save</a>
+                        <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">cancel</a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="day-events-list" class="day-events-list">
+
+            </div>
+            <div class="day-inspiration-quote" id="inspirational-quote">
+                Every child is an artist. The problem is how to remain an artist once he grows up. –Pablo Picasso
+            </div>
+        </div>
+    </div>
+    <div class="calendar--view" id="calendar-view">
+        <div class="cview__month">
+            <span class="cview__month-last" id="calendar-month-last">Apr</span>
+            <span class="cview__month-current" id="calendar-month">May</span>
+            <span class="cview__month-next" id="calendar-month-next">Jun</span>
+        </div>
+        <div class="cview__header">Sun</div>
+        <div class="cview__header">Mon</div>
+        <div class="cview__header">Tue</div>
+        <div class="cview__header">Wed</div>
+        <div class="cview__header">Thu</div>
+        <div class="cview__header">Fri</div>
+        <div class="cview__header">Sat</div>
+        <div class="calendar--view" id="dates">
+        </div>
+    </div>
+    <div class="footer">
+        <span><span id="footer-date" class="footer__link">Today is May 30</span></span>
+    </div>
+</div>
+<!-- partial -->
+<script src="js/script.js"></script>
+<!--Ημερολόγιο Google -->
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FAthens&showTitle=1&title=Furuno&src=ZWNqbTFvbG42YW9ncGNjY2djYTMzZ2pqYzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZWwuZ3JlZWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23F4511E&color=%2333B679&color=%230B8043"
+        style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<!-- Scripts -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+<script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+<script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+<script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

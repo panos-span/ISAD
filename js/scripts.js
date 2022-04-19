@@ -2,20 +2,22 @@
     "use strict";
 
     /* Preloader */
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         var preloaderFadeOutTime = 500;
+
         function hidePreloader() {
             var preloader = $('.spinner-wrapper');
-            setTimeout(function() {
+            setTimeout(function () {
                 preloader.fadeOut(preloaderFadeOutTime);
             }, 500);
         }
+
         hidePreloader();
     });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $(function() {
-        $(document).on('click', 'a.page-scroll', function(event) {
+    $(function () {
+        $(document).on('click', 'a.page-scroll', function (event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top

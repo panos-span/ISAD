@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>FURUNO HELLAS S.A.</title>
+    <title>Event</title>
 
 
-    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/preloader.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-
 <body>
 
 <!-- Preloader -->
@@ -33,13 +32,16 @@
     </div>
 </div>
 <!-- end of preloader -->
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
     <!-- Text Logo - Use this if you don't have a graphic logo -->
     <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
     <!-- Image Logo -->
-
+    <a href="index.html">
+        <img src="images/badge.png" class="top_left" alt="Furuno_Badge">
+    </a>
 
     <!-- Mobile Menu Toggle Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -50,53 +52,61 @@
     <!-- end of mobile menu toggle button -->
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#"></a>
+
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#"></a>
+
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#"></a>
+
             </li>
             <li class="nav-item">
-                <p style="color: white;font-size: 18px">Signed in as <b><u>Διευθυντής Πωλήσεων</u></b></p>
+                <p style="color: white;font-size: 18px">Signed in as <b><u>Γραμματέας</u></b></p>
             </li>
         </ul>
 
     </div>
 </nav> <!-- end of navbar -->
 <!-- end of navbar -->
+<div class="day-add-event" id="add-day-event-box" data-active="false">
+    <div class="row">
+        <div class="half">
+            <label class="add-event-label">
+                Name of event
+                <input type="text" class="add-event-edit add-event-edit--long" placeholder="New event"
+                       id="input-add-event-name">
 
-
-<div class="center">
-    <a href="index.html">
-        <img src="images/Furuno_Hellas.png" class="center" alt="Furuno">
-    </a>
-</div>
-
-
-<div class="center_text">
-    <h1>Operations</h1>
-</div>
-
-<div class="grid-container2">
-    <div class="grid-item grid-item-1">
-        <a href="data.html">
-            <button class="button">Data</button>
-        </a>
+            </label>
+        </div>
+        <div class="qtr">
+            <label class="add-event-label">
+                Start Time
+                <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time"
+                       data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm"
+                       data-options="a,p,am,pm">
+            </label>
+        </div>
+        <div class="qtr">
+            <label class="add-event-label">
+                End Time
+                <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time"
+                       data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm"
+                       data-options="a,p,am,pm">
+            </label>
+        </div>
+        <div class="half">
+            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
+               class="event-btn--save event-btn">save</a>
+            <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">cancel</a>
+        </div>
     </div>
-    <div class="grid-item grid-item-2">
-        <a href="calendar.html">
-            <button class="button">Calendar</button>
-        </a>
-    </div>
-    <div class="grid-item grid-item-3">
-        <button class="button">Promote</button>
-    </div>
-</div>
 
+</div>
 
 <!-- Scripts -->
 <script src="js/jquery-3.6.0.min.js"></script>
@@ -110,8 +120,5 @@
 <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
 <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
 <script src="js/scripts.js"></script> <!-- Custom scripts -->
-
 </body>
-
-
 </html>
