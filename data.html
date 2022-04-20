@@ -8,10 +8,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/preloader.css">
-    <link rel="stylesheet" type="text/css" href="css/data.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -36,42 +34,12 @@
 <!-- end of preloader -->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-    <!-- Text Logo - Use this if you don't have a graphic logo -->
-    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
-
-    <!-- Image Logo -->
-    <a href="index.html">
-        <img src="images/badge.png" class="top_left" alt="Furuno_Badge">
-    </a>
-
-    <!-- Mobile Menu Toggle Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-awesome fas fa-bars"></span>
-        <span class="navbar-toggler-awesome fas fa-times"></span>
-    </button>
-    <!-- end of mobile menu toggle button -->
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-
-            </li>
-            <li class="nav-item">
-
-            </li>
-            <li class="nav-item">
-
-            </li>
-            <li class="nav-item">
-                <p style="color: white;font-size: 18px">Signed in as <b><u>Διευθυντής Πωλήσεων</u></b></p>
-            </li>
-        </ul>
-
+<nav class="navbar navbar-light" style="background-color: #364f65;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/badge.png" alt="Badge" width="40%"> </a>
+        <h5 style="color: white">Signed in as <b><u>Διευθυντής Πωλήσεων</u></b></h5>
     </div>
-</nav> <!-- end of navbar -->
+</nav>
 <!-- end of navbar -->
 
 <div class="center_text">
@@ -81,7 +49,12 @@
 <div class="grid-container">
     <div class="grid-item grid-item-1">
         <a href="#">
-            <button class="button">Search</button>
+            <button class="button">Search
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                     viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
         </a>
     </div>
     <div class="grid-item grid-item-2">
@@ -96,7 +69,13 @@
     </div>
     <div class="grid-item grid-item-4">
         <a href="#">
-            <button class="button">Extract</button>
+            <button class="button">Extract
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-download" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                </svg>
+            </button>
         </a>
     </div>
 </div>

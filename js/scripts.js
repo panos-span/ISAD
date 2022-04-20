@@ -1,5 +1,28 @@
 (function ($) {
     "use strict";
+    $(function () {
+        var dtToday = new Date();
+
+        var month = dtToday.getMonth() + 1;
+        var day = dtToday.getDate();
+        var year = dtToday.getFullYear();
+        if (month < 10)
+            month = '0' + month.toString();
+        if (day < 10)
+            day = '0' + day.toString();
+
+        var maxDate = year + '-' + month + '-' + day;
+        $('#startdateId').attr('min', maxDate);
+
+
+        if (month < 10) month = "0" + month;
+        if (day < 10) day = "0" + day;
+
+        var today = year + "-" + month + "-" + day;
+
+        document.getElementById("startdateId").value = today;
+    });
+
 
     /* Preloader */
     $(window).on('load', function () {
