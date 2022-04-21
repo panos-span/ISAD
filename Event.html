@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Event</title>
+    <title>Create Event</title>
 
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -11,18 +11,27 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
+    <!--logo-->
+    <link rel="icon" href="images/logo.png">
 
 </head>
 <body>
 
 
 <!-- Navbar -->
-<nav class="navbar navbar-light" style="background-color: #364f65;">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/badge.png" alt="Badge" width="40%"> </a>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active"><img src="images/badge.png" alt="Badge" width="100px"></a>
+    <a href="data.html">Data</a>
+    <a href="calendar.html">Calendar</a>
+    <a disabled="">Promote</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div class="topnav-right">
         <h5 style="color: white">Signed in as <b><u>Γραμματέας</u></b></h5>
     </div>
-</nav> <!-- end of navbar -->
+
+</div>
 <!-- end of navbar -->
 
 
@@ -33,7 +42,7 @@
         <div class="mb-3">
             <fieldset>
                 <label for="exampleFormControlInput1" class="form-label"> <b>Topic</b></label>
-                <input type="" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="exampleFormControlInput1">
             </fieldset>
         </div>
         <div class="row">
@@ -61,30 +70,30 @@
                     <p><br>Duration :</p>
                     <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                         <option selected>0 hour</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
+                        <option value="1">1 hour</option>
+                        <option value="2">2 hours</option>
+                        <option value="3">3 hours</option>
+                        <option value="4">4 hours</option>
+                        <option value="5">5 hours</option>
+                        <option value="6">6 hours</option>
+                        <option value="7">7 hours</option>
+                        <option value="8">8 hours</option>
+                        <option value="9">9 hours</option>
                     </select>
 
                     <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                         <option selected>0 minutes</option>
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                        <option value="25">25</option>
-                        <option value="30">30</option>
-                        <option value="35">35</option>
-                        <option value="40">40</option>
-                        <option value="45">45</option>
-                        <option value="50">50</option>
-                        <option value="55">55</option>
+                        <option value="5">5 minutes</option>
+                        <option value="10">10 minutes</option>
+                        <option value="15">15 minutes</option>
+                        <option value="20">20 minutes</option>
+                        <option value="25">25 minutes</option>
+                        <option value="30">30 minutes</option>
+                        <option value="35">35 minutes</option>
+                        <option value="40">40 minutes</option>
+                        <option value="45">45 minutes</option>
+                        <option value="50">50 minutes</option>
+                        <option value="55">55 minutes</option>
 
                     </select>
                 </fieldset>
