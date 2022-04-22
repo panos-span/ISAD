@@ -17,7 +17,7 @@
     <link rel="icon" href="images/logo.png">
 
 </head>
-<body>
+<body class="dark-mode">
 
 
 <!-- Navbar -->
@@ -25,14 +25,16 @@
     <a href="index.html" class="active"><img src="images/badge.png" alt="Badge" width="100px"></a>
     <a href="data.html">Data</a>
     <a href="calendar.html">Calendar</a>
-    <a disabled="">Promote</a>
+    <a disabled="" style="color: black">Promote</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
     <div class="topnav-right">
-        <h5 style="color: white">Signed in as <b><u>Γραμματέας</u></b></h5>
+        <a href="javascript:void(0);" onclick="dropdown()"><h5>Signed in as <b><u>Διευθυντής Πωλήσεων</u></b></h5></a>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Sign out</a>
+        </div>
     </div>
-
 </div>
 <!-- end of navbar -->
 
@@ -43,8 +45,8 @@
     <form id="contact" action="" method="post">
         <div class="mb-3">
             <fieldset>
-                <label for="exampleFormControlInput1" class="form-label"> <b>Topic</b></label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <label for="exampleFormControlInput1" class="form-label">Topic</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" required>
             </fieldset>
         </div>
         <div class="row">
@@ -70,7 +72,7 @@
             <div class="col-sm-8">
                 <fieldset>
                     <p><br>Duration :</p>
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" required>
                         <option selected>0 hour</option>
                         <option value="1">1 hour</option>
                         <option value="2">2 hours</option>
@@ -83,7 +85,7 @@
                         <option value="9">9 hours</option>
                     </select>
 
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" required>
                         <option selected>0 minutes</option>
                         <option value="5">5 minutes</option>
                         <option value="10">10 minutes</option>
@@ -107,7 +109,7 @@
                     <br>
                     <label for="exampleDataList" class="form-label">Συμμετέχοντες Υπάλληλοι</label>
                     <input class="form-control" list="datalistOptions" id="exampleDataList"
-                           placeholder="Type to search...">
+                           placeholder="Type to search..." required>
                     <datalist id="datalistOptions">
                         <option value="Διευθυντής Πωλήσεων">
                         <option value="Account Manager">
@@ -123,7 +125,7 @@
                     <br>
                     <label for="exampleDataList2" class="form-label">Συμμετέχοντες Πελάτες</label>
                     <input class="form-control" list="datalistOptions2" id="exampleDataList2"
-                           placeholder="Type to search...">
+                           placeholder="Type to search..." required>
                     <datalist id="datalistOptions2">
                         <option value="001">
                         <option value="002">

@@ -16,7 +16,7 @@
     <link rel="icon" href="images/logo.png">
 </head>
 
-<body>
+<body class="dark-mode">
 
 
 <!-- Navbar -->
@@ -24,12 +24,15 @@
     <a href="index.html" class="active"><img src="images/badge.png" alt="Badge" width="100px"></a>
     <a href="data.html">Data</a>
     <a href="calendar.html">Calendar</a>
-    <a disabled="">Promote</a>
+    <a disabled="" style="color: black">Promote</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
     <div class="topnav-right">
-        <h5 style="color: white">Signed in as <b><u>Διευθυντής Πωλήσεων</u></b></h5>
+        <a href="javascript:void(0);" onclick="dropdown()"><h5>Signed in as <b><u>Διευθυντής Πωλήσεων</u></b></h5></a>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Sign out</a>
+        </div>
     </div>
 </div>
 <!-- end of navbar -->
