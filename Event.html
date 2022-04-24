@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/form.css">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--logo-->
     <link rel="icon" href="images/logo.png">
 
@@ -32,11 +33,39 @@
     <div class="topnav-right">
         <a href="javascript:void(0);" onclick="dropdown()"><h5>Signed in as <b><u>Διευθυντής Πωλήσεων</u></b></h5></a>
         <div id="myDropdown" class="dropdown-content">
-            <a href="index.html">Sign out</a>
+            <a data-bs-toggle="modal" data-bs-target="#myModal" href="#">Sign out</a>
         </div>
     </div>
 </div>
 <!-- end of navbar -->
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title" style="color: black">Sign Out</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body" style="color: black">
+                Are you sure you want to sign out?
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <a href="index.html" style="color: white">
+                    <button type="button" class="btn btn-primary">Sign Out</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 <div class="centered_div">
@@ -62,7 +91,7 @@
             <div class="col-sm-4">
                 <fieldset>
                     <label> Choose Time: <br>
-                        <input type="time" id="appt" name="appt"
+                        <input type="time" id="appt" name="appt" class="form-control"
                                required>
                     </label>
                 </fieldset>
