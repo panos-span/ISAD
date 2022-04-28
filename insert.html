@@ -77,7 +77,7 @@
         <div class="mb-3">
             <fieldset>
                 <label for="exampleFormControlInput1" class="form-label">Name and Surname</label>
-                <input type="text" class="form-control" placeholder="π.χ Ιωάννης Μαρεντάκης" required>
+                <input type="text" class="form-control" placeholder="e.g. Ioannis Maritakis" required>
             </fieldset>
         </div>
         <div class="mb-3">
@@ -339,7 +339,14 @@
             <div class="col-sm-4">
                 <fieldset>
                     <label for="exampleFormControlInput1" class="form-label">City</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="π.χ Athens"
+                    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="e.g. Athens"
+                           required>
+                </fieldset>
+            </div>
+            <div class="col-sm-4">
+                <fieldset>
+                    <label for="exampleFormControlInput1" class="form-label">Telephone</label>
+                    <input type="tel" class="form-control" id="exampleFormControlInput4" placeholder="e.g. 210XXXXXX"
                            required>
                 </fieldset>
             </div>
@@ -361,23 +368,6 @@
     </form>
 </div>
 
-<div class="centered_div">
-    <h3>or give file with Details of the Client</h3>
-    <form id="contact2" action="" method="post">
-        <div class="row">
-            <div class="col-sm-5">
-                <label for="formFile" class="form-label">Docx or PDF</label>
-                <input class="form-control" type="file" id="formFile" required>
-            </div>
-
-            <div class="col-sm-3">
-                <br>
-                <button type="submit" id="form-submit2" class="block">Submit</button>
-            </div>
-        </div>
-
-    </form>
-</div>
 
 <!-- Scripts -->
 <script src="js/jquery-3.6.0.min.js"></script>
