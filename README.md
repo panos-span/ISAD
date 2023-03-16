@@ -2,3 +2,5 @@
 ## From γκιώνηδες for γκιώνηδες
 
 # Nolis Dellatollis
+
+- Theo Mallikoko
